@@ -287,7 +287,8 @@ typedef enum TRITONSERVER_loglevel_enum {
 ///
 typedef enum TRITONSERVER_logformat_enum {
   TRITONSERVER_LOG_DEFAULT,
-  TRITONSERVER_LOG_ISO8601
+  TRITONSERVER_LOG_ISO8601,
+  TRITONSERVER_LOG_ALTAIR
 } TRITONSERVER_LogFormat;
 
 /// Is a log level enabled?
