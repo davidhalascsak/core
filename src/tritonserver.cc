@@ -1552,6 +1552,9 @@ TRITONSERVER_ServerOptionsSetLogFormat(
 #ifdef TRITON_ENABLE_LOGGING
   // Logging is global for now...
   switch (format) {
+    case TRITONSERVER_LOG_ALTAIR:
+      LOG_SET_FORMAT(triton::common::Logger::Format::kALTAIR);
+      break;
     case TRITONSERVER_LOG_DEFAULT:
       LOG_SET_FORMAT(triton::common::Logger::Format::kDEFAULT);
       break;
